@@ -9,7 +9,7 @@ https://opendata.etda.or.th/eu/dataset/dataset_25_02/resource/fb003566-bfe7-44df
 
 This is prototype web prediction form model dicision tree
 
-### Web App Example Output
+### Web App Example 
 
 ![image](https://github.com/PhurisKR/Predict_Fake_News/assets/118201161/5a5dd00a-ae6a-4e22-ac14-bc3d25e83776)
 
