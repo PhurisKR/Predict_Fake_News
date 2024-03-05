@@ -15,10 +15,6 @@ This is prototype web prediction form model dicision tree
 
 
 
-### Model Summary
-
-![image](https://github.com/PhurisKR/Predict_Fake_News/assets/118201161/be05ae5a-cee9-4b75-8075-a0a5fbd5d12a)
-
 
 ### Dicision Tree
 
@@ -31,6 +27,3 @@ This is prototype web prediction form model dicision tree
 
 
 
-### More About AQ-10
-
-### Relevant Links
