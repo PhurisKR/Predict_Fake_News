@@ -10,7 +10,8 @@
 
 ### Web App Example Output
 
-![image](https://user-images.githubusercontent.com/87671757/235525743-ff28a433-2c1f-49a0-95b4-3e9cc8ae87cc.png)
+![image](https://github.com/PhurisKR/Predict_Fake_News/assets/118201161/5a5dd00a-ae6a-4e22-ac14-bc3d25e83776)
+
 
 
 ###  Dataframe's Correlation Coefficients
