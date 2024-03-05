@@ -1,12 +1,13 @@
-# Autism Diagnosis Predictive Model Web App
+# Model Web App
 
 ### Link to Data
-
+https://data.go.th/dataset/dataset_25_02?fbclid=IwAR3fip4rhRVHIEnfSP00ox2DddICf_dKYy1hheuEcg5v7IfC4cFJ575Ir_c
+https://opendata.etda.or.th/eu/dataset/dataset_25_02/resource/fb003566-bfe7-44df-979a-21fd68e9554d?fbclid=IwAR32cM4nuDzQ5hF6H_C8ZsWLak-Fom6A7dghKicFhNuf6380y2__FQhvycs****
 ### App Deployment
 
 ### Description
 
-
+This is prototype web prediction form model dicision tree
 
 ### Web App Example Output
 
