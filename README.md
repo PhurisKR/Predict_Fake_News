@@ -30,11 +30,18 @@ This is prototype web prediction form model dicision tree
 
 ### Model Summary
 
-![image](https://user-images.githubusercontent.com/87671757/222828743-df400823-85cc-4f9c-8ae8-174d6c12e12a.png)
+![image](https://github.com/PhurisKR/Predict_Fake_News/assets/118201161/be05ae5a-cee9-4b75-8075-a0a5fbd5d12a)
 
-### Model Report
 
-![image](https://user-images.githubusercontent.com/87671757/222828403-f62b74ab-322c-4449-97a4-c1f031f8fa38.png)
+### Dicision Tree
+
+
+![image](https://github.com/PhurisKR/Predict_Fake_News/assets/118201161/1eb59c0f-2c70-4951-b473-6a517c1d6149)
+
+### Confusion Matrix
+
+![image](https://github.com/PhurisKR/Predict_Fake_News/assets/118201161/4f10ad82-8492-46ba-9c4f-2bd678f0ee2c)
+
 
 
 ### More About AQ-10
