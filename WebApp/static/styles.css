@@ -1,0 +1,132 @@
+/* Nav Bar */
+nav {
+  text-align: center;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+.nav-menu {
+  margin-bottom: 20px;
+}
+
+/* Style the form container */
+form {
+  width: 80%;
+  max-width: 650px;
+  margin: 0 auto;
+  background-color: #f9f9f9; /* Light background color */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Padding */
+}
+
+/* Style the questions and answers */
+.q {
+  font-weight: bold;
+}
+.answer {
+  margin-top: 10px;
+}
+
+/* Style the radio buttons */
+label {
+  display: block;
+}
+input[type=radio] {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* Style the submit button */
+button[type=submit] {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #333; /* Button color */
+  color: #fff; /* Text color */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button[type=submit]:hover {
+  background-color: #ffd700; /* Darker button color on hover */
+  color: #333; /* Text color on hover */
+}
+
+.flashes {
+  display: block;
+  text-align: left;
+  font-size: 1.2em; /* Font size */
+  font-weight: bold;
+}
+
+ul {
+  font-size: 1.2em; /* Font size */
+}
+
+a {
+  color: #333; /* Link color */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #000; /* Darker link color on hover */
+}
+
+
+
+/* Reset default margin and padding */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Navigation Menu */
+.nav-menu {
+  background-color: #333; /* Dark background color */
+  color: #fff; /* White text color */
+  padding: 10px 0; /* Padding for menu items */
+  text-align: center; /* Center-align menu items */
+}
+
+.nav-menu h2 {
+  margin: 0; /* Remove default margin */
+  font-size: 24px; /* Font size for menu heading */
+  margin-bottom: 20px;
+}
+
+.nav-menu ul {
+  list-style: none; /* Remove bullet points from the list */
+  padding: 0; /* Remove default padding */
+}
+
+.nav-menu ul li {
+  display: inline-block; /* Display menu items horizontally */
+  margin-right: 20px; /* Add space between menu items */
+}
+
+.nav-menu ul li.active a {
+  color: #ffd700; /* Change text color for active link */
+}
+
+.nav-menu ul li a {
+  color: #fff; /* White text color for menu links */
+  text-decoration: none; /* Remove underline from links */
+  font-size: 22px; /* Font size for menu links */
+}
+
+.nav-menu ul li a:hover {
+  color: #ffd700; /* Change text color on hover */
+}

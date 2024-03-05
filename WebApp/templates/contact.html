@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+
+/* Reset default margin and padding */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Menu */
+.nav-menu {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* White text color */
+    padding: 10px 0; /* Padding for menu items */
+    text-align: center; /* Center-align menu items */
+}
+
+.nav-menu h2 {
+    margin: 0; /* Remove default margin */
+    font-size: 24px; /* Font size for menu heading */
+    margin-bottom: 20px;
+}
+
+.nav-menu ul {
+    list-style: none; /* Remove bullet points from the list */
+    padding: 0; /* Remove default padding */
+}
+
+.nav-menu ul li {
+    display: inline-block; /* Display menu items horizontally */
+    margin-right: 20px; /* Add space between menu items */
+}
+
+.nav-menu ul li a {
+    color: #fff; /* White text color for menu links */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 22px; /* Font size for menu links */
+}
+
+.nav-menu ul li a:hover {
+    color: #ffd700; /* Change text color on hover */
+}
+
+/* Container */
+.container {
+    max-width: 800px; /* Set maximum width for the container */
+    margin: 20px auto; /* Center-align the container */
+    padding: 20px; /* Add padding inside the container */
+    background-color: #f9f9f9; /* Light background color */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow */
+}
+
+/* Profile Picture */
+.profile-pic {
+    width: 150px; /* Set width of the profile picture */
+    height: 150px; /* Set height of the profile picture */
+    border-radius: 50%; /* Make the picture round */
+    margin-bottom: 20px; /* Add space below the profile picture */
+    border: 2px solid #000; /* Black border */
+}
+
+/* Name */
+h1 {
+    color: #333; /* Dark text color */
+    font-size: 24px; /* Font size for the name */
+}
+
+/* Description */
+p {
+    color: #333; /* Dark text color */
+    font-size: 16px; /* Font size for the description */
+    line-height: 1.5; /* Line height for better readability */
+    margin-bottom: 20px; /* Add space below the description */
+}
+
+/* Contact Section */
+#contact {
+    padding: 20px; /* Add padding around the contact section */
+    margin-top: 20px; /* Add space above the contact section */
+}
+
+/* Contact Heading */
+h2 {
+    color: #ffffff; /* Dark text color */
+    font-size: 24px; /* Font size for the contact heading */
+    margin-bottom: 10px; /* Add space below the contact heading */
+}
+
+/* Contact Link */
+h3 a {
+    color: #1b6396; /* Blue text color */
+    text-decoration: none; /* Remove underline from the link */
+    font-size: 18px; /* Font size for the contact link */
+    margin-left: 5px;
+}
+
+/* Contact Link Hover */
+h3 a:hover {
+    color: #ff4500; /* Change text color on hover */
+}
+
+
+
+
+
+    </style>
+</head>
+<body>
+    
+    <nav class="nav-menu">
+        <h2>แบบสอบถาม พฤติกรรมการใช้อินเทอร์เน็ต</h2>
+        <ul>
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li ><a href="{{ url_for('contact') }}">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <img class="profile-pic" src="{{ url_for('static', filename='cat-cat-meme.png') }}" alt="Profile Picture">
+        <h1><a href="#">Phuris Kr.</a></h1>
+        <p>Meow meow meow meow meow meow meow meow meow meow meow meow meow meow meow meow meow meow meow meow meow meow meow meow meow meow~</p>
+        <div id="contact" style="padding: 20px;  margin-top: 20px;"></div>
+        <h1>Contact </h1>
+        <h3><a href="https://github.com/phurisk">GitHub</a></h3>
+    </div>
+    
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

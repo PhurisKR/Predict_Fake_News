@@ -1,0 +1,190 @@
+{% extends 'base.html' %}
+
+{% block title %}Homepage{% endblock %}
+
+{% block content %}
+    <form method="POST" action="/submit" onsubmit="return validateForm()">
+      
+      <div class="question">
+        <p class="q">1. ใช้ Social Media เช่น Facebook, Twitter, Instagram</p>
+        <div class="answer">
+          <label><input type="radio" name="q1" value="agree" {% if scores['online_acitivity_1'] == 1 %}checked{% endif %}> ใช้</label><br>
+          <label><input type="radio" name="q1" value="disagree" {% if scores['online_acitivity_1'] == 0 %}checked{% endif %}> ไม่ใช้</label>
+        </div>
+      </div>
+      
+      <div class="question">
+        <p class="q">2. ใช้แอปพลิเคชันถ่ายทอดสด เช่น Facebook Live, Instagram Live ,YouTube live</p>
+        <div class="answer">
+          <label><input type="radio" name="q2" value="agree" {% if scores['online_acitivity_2'] == 1 %}checked{% endif %}> ใช้</label><br>
+          <label><input type="radio" name="q2" value="disagree" {% if scores['online_acitivity_2'] == 0 %}checked{% endif %}> ไม่ใช้</label>
+        </div>
+      </div>
+      
+        <div class="question">
+            <p class="q">3. เล่นเกมออนไลน์</p>
+            <div class="answer">
+              <label><input type="radio" name="q3" value="agree" {% if scores['online_acitivity_3'] == 1 %}checked{% endif %}> เล่น</label><br>
+              <label><input type="radio" name="q3" value="disagree" {% if scores['online_acitivity_3'] == 0 %}checked{% endif %}> ไม่เล่น</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p class="q">4. รับ-ส่งอีเมล</p>
+            <div class="answer">
+              <label><input type="radio" name="q4" value="agree" {% if scores['online_acitivity_4'] == 1 %}checked{% endif %}> ใช่</label><br>
+              <label><input type="radio" name="q4" value="disagree" {% if scores['online_acitivity_4'] == 0 %}checked{% endif %}> ไม่ใช่</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p class="q">5. มีการค้นหาข้อมูล (Search Engine) เช่น ค้นหาข้อมูลใน Google/Bing</p>
+            <div class="answer">
+              <label><input type="radio" name="q5" value="agree" {% if scores['online_acitivity_5'] == 1 %}checked{% endif %}> ใช่</label><br>
+              <label><input type="radio" name="q5" value="disagree" {% if scores['online_acitivity_5'] == 0 %}checked{% endif %}> ไม่ใช่</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p class="q">6. เรียนออนไลน์ (e-Learning)</p>
+            <div class="answer">
+              <label><input type="radio" name="q6" value="agree" {% if scores['online_acitivity_6'] == 1 %}checked{% endif %}> ใช่</label><br>
+              <label><input type="radio" name="q6" value="disagree" {% if scores['online_acitivity_6'] == 0 %}checked{% endif %}> ไม่</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p class="q">7. หางาน/สมัครงานทางออนไลน์</p>
+            <div class="answer">
+              <label><input type="radio" name="q7" value="agree" {% if scores['online_acitivity_7'] == 1 %}checked{% endif %}> ใช่</label><br>
+              <label><input type="radio" name="q7" value="disagree" {% if scores['online_acitivity_7'] == 0 %}checked{% endif %}> ไม่ใช่</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p class="q">8. มีการซื้อขายสินทรัพย์เพื่อการลงทุน เช่น หุ้น กองทุนรวม</p>
+            <div class="answer">
+              <label><input type="radio" name="q8" value="agree" {% if scores['online_acitivity_8'] == 1 %}checked{% endif %}> ใช่</label><br>
+              <label><input type="radio" name="q8" value="disagree" {% if scores['online_acitivity_8'] == 0 %}checked{% endif %}> ไม่ใช่</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p class="q">9. ติดต่อสื่อสารออนไลน์ ทั้งการโทรศัพท์ และพูดคุย (Chat)</p>
+            <div class="answer">
+              <label><input type="radio" name="q9" value="agree" {% if scores['online_acitivity_9'] == 1 %}checked{% endif %}> ใช่</label><br>
+              <label><input type="radio" name="q9" value="disagree" {% if scores['online_acitivity_9'] == 0 %}checked{% endif %}> ไม่ใช่</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p class="q">10. ขายสินค้าและบริการออนไลน์</p>
+            <div class="answer">
+              <label><input type="radio" name="q10" value="agree" {% if scores['online_acitivity_10'] == 1 %}checked{% endif %}> ใช่</label><br>
+              <label><input type="radio" name="q10" value="disagree" {% if scores['online_acitivity_10'] == 0 %}checked{% endif %}> ไม่ใช่</label>
+            </div>
+        </div>
+
+        <div class="question">
+          <p class="q">11. ดาวน์โหลดซอฟต์แวร์/เพลง/ละคร/ภาพยนตร์/เกม/ไอเทมในเกม</p>
+          <div class="answer">
+            <label><input type="radio" name="q11" value="agree" {% if scores['online_acitivity_11'] == 1 %}checked{% endif %}> ใช่</label><br>
+            <label><input type="radio" name="q11" value="disagree" {% if scores['online_acitivity_11'] == 0 %}checked{% endif %}> ไม่ใช่</label>
+          </div>
+        </div>
+      
+        <div class="question">
+            <p class="q">12. ซื้อสินค้าและบริการออนไลน์</p>
+            <div class="answer">
+              <label><input type="radio" name="q12" value="agree" {% if scores['online_acitivity_12'] == 1 %}checked{% endif %}> ใช่</label><br>
+              <label><input type="radio" name="q12" value="disagree" {% if scores['online_acitivity_12'] == 0 %}checked{% endif %}> ไม่ใช่</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p class="q">13. ดูโทรทัศน์/ดูคลิป/ดูหนัง/ฟังเพลงออนไลน์</p>
+            <div class="answer">
+              <label><input type="radio" name="q13" value="agree" {% if scores['online_acitivity_13'] == 1 %}checked{% endif %}> ใช่</label><br>
+              <label><input type="radio" name="q13" value="disagree" {% if scores['online_acitivity_13'] == 0 %}checked{% endif %}> ไม่ใช่</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p class="q">14. อ่านข่าว/บทความ/หนังสืออิเล็กทรอนิกส์ (e-Book)</p>
+            <div class="answer">
+              <label><input type="radio" name="q14" value="agree" {% if scores['online_acitivity_14'] == 1 %}checked{% endif %}> ใช่</label><br>
+              <label><input type="radio" name="q14" value="disagree" {% if scores['online_acitivity_14'] == 0 %}checked{% endif %}> ไม่ใช่</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p class="q">15. ทำธุรกรรมทางการเงินออนไลน์</p>
+            <div class="answer">
+              <label><input type="radio" name="q15" value="agree" {% if scores['online_acitivity_15'] == 1 %}checked{% endif %}> ทำ</label><br>
+              <label><input type="radio" name="q15" value="disagree" {% if scores['online_acitivity_15'] == 0 %}checked{% endif %}> ไม่ทำ</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p class="q">16. ใช้งานบริการภาครัฐผ่านระบบออนไลน์ เช่น ชำระภาษีออนไลน์</p>
+            <div class="answer">
+              <label><input type="radio" name="q16" value="agree" {% if scores['online_acitivity_16'] == 1 %}checked{% endif %}> ใช้</label><br>
+              <label><input type="radio" name="q16" value="disagree" {% if scores['online_acitivity_16'] == 0 %}checked{% endif %}> ไม่ใช้</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p class="q">17. ทำงานผ่านระบบออนไลน์ ประชุมออนไลน์</p>
+            <div class="answer">
+              <label><input type="radio" name="q17" value="agree" {% if scores['online_acitivity_17'] == 1 %}checked{% endif %}> ใช่</label><br>
+              <label><input type="radio" name="q17" value="disagree" {% if scores['online_acitivity_17'] == 0 %}checked{% endif %}> ไม่ใช่</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p class="q">18. ซื้อประกันออนไลน์ เช่น ประกันCOVID19 ประกันสุขภาพ ประกันอุบัติเหตุ ฯลฯ</p>
+            <div class="answer">
+              <label><input type="radio" name="q18" value="agree" {% if scores['online_acitivity_18'] == 1 %}checked{% endif %}> ใช่</label><br>
+              <label><input type="radio" name="q18" value="disagree" {% if scores['online_acitivity_18'] == 0 %}checked{% endif %}> ไม่ใช่</label>
+            </div>
+        </div>
+
+  
+        <button type="submit">Submit</button>
+        {% with messages = get_flashed_messages() %}
+          {% if messages %}
+            <!-- <p class="flashes">
+            {% for message in messages %}
+              {{ message }}
+            {% endfor %}
+            </p> -->
+          {% endif %}
+        {% endwith %}
+      </form>
+    <script>
+        function validateForm() {
+            var questions = document.querySelectorAll(".question");
+            var checked = true;
+            for (var i = 0; i < questions.length; i++) {
+                var radios = questions[i].querySelectorAll("input[type='radio']");
+                var answered = false;
+                for (var j = 0; j < radios.length; j++) {
+                    if (radios[j].checked) {
+                        answered = true;
+                        break;
+                    }
+                }
+                if (!answered) {
+                    checked = false;
+                    break;
+                }
+            }
+            if (!checked) {
+                alert("Please answer all questions before submitting.");
+                return false;
+            }
+        }
+
+    </script>
+    
+{% endblock %}

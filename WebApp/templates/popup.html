@@ -1,0 +1,109 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Message</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+        }
+        .popup {
+            background-color: #f4f4f4;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        .popup h2 {
+            margin-top: 0;
+        }
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="popup">
+        <h2>Autism Prediction:</h2>
+        <p>{{ diagnosis }} ({{ percentage_yes }}% Yes, {{ percentage_no }}% No)</p>
+        <button class="btn" onclick="closePopup()">Close</button>
+    </div>
+
+    <script>
+        // Function to close the popup window
+        function closePopup() {
+            window.close();
+        }
+    </script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Message</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+        }
+        .popup {
+            background-color: #f4f4f4;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        .popup h2 {
+            margin-top: 0;
+        }
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="popup">
+        <h2>โอกาสที่จะพบข่าวปลอม:</h2>
+        <p> ( พบข่าวปลอม {{ percentage_yes | round(4) }}% )</p>
+        <!-- <p>{{ diagnosis }} ({{ percentage_yes }}% Yes, {{ percentage_no }}% No)</p> -->
+        <button class="btn" onclick="closePopup()">Close</button>
+    </div>
+
+    <script>
+        // Function to close the popup window and go back
+        function closePopup() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>
+
+
